@@ -1,0 +1,7 @@
+[theme]
+# This sets the base theme for everything
+primaryColor="#FFFF00" # Our yellow color for highlights
+backgroundColor="#0f2027" # Our dark background
+secondaryBackgroundColor="#203a43" # A slightly lighter dark
+textColor="#f1f1f1" # WHITE TEXT FOR EVERYTHING
+font="sans serif"
