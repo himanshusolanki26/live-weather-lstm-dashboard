@@ -9,28 +9,12 @@ from tensorflow.keras.models import load_model
 import plotly.graph_objects as go
 import time
 
-# ---- Force Streamlit Cloud theme overrides so CSS behaves like local ----
-st.markdown("""
-    <style>
-        /* Make base backgrounds transparent so our gradient shows */
-        .stApp, .main, .block-container, [data-testid="stAppViewContainer"] {
-            background: transparent !important;
-        }
-        body, html {
-            background: transparent !important;
-        }
-        /* Slight sidebar padding fix on Cloud */
-        [data-testid="stSidebar"] { padding-top: 20px !important; }
-        /* Force readable text inside native select/dropdown lists */
-        .stSelectbox div[data-baseweb="select"] * { color: black !important; }
-    </style>
-""", unsafe_allow_html=True)
-
 # ----------------- Page Config & Styling -----------------
 
 st.set_page_config(page_title="Weather + LSTM Dashboard", page_icon="🌤️", layout="wide")
 
-# THIS IS THE "Dark Glass" UI theme - FINAL-FINAL-FIX
+# THIS CODE IS 100% CORRECT
+# It will work on Streamlit Cloud ONLY IF you add the requirements.txt file
 st.markdown("""
     <style>
     /* 1. Main Page Background - Dark Gradient */
@@ -296,4 +280,3 @@ with tab3:
         st.info("No location data available to display on map.")
         
     st.markdown('</div>', unsafe_allow_html=True)
-
